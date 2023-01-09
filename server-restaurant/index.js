@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const PORT = process.env.PORT || 8080;
-const YOUR_DOMAIN = process.env.DOMAIN_NAME
+const YOUR_DOMAIN = "https://restaurant-e-commerce-website-m2yp.vercel.app/"
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
