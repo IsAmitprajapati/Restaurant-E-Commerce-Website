@@ -18,15 +18,21 @@ see output
   1.Go on the folder server-restaurant and run again cmd npm install
   2. After node package install, after than run npm run dev or npm run start to start backend
 
-Most probably some enviroment variable also to be set
+Most probably some enviroment variable also to be set...
+
+## Upload Image
+   Only admin upload the image, That option display only if admin login with email id only or Google Account.
 
 contact me Linkedin : https://www.linkedin.com/in/itsamitprajapati/ 
 
-Thank you 
+Thank you !!!
 
 Follow me for more : 
 
 Linkedin : https://www.linkedin.com/in/itsamitprajapati/
 Twitter : https://twitter.com/IsAmitprajapati
 Instagram : https://www.instagram.com/isamitprajapati/
+
+Regards,
+Amit Prajapati
 
