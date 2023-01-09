@@ -15,7 +15,7 @@ see output
  3. After node package install, After that run the cmd npm start
 
 ## Backend
-  1.Go on the folder server-restaurant and run again cmd npm install
+  1. Go on the folder server-restaurant and run again cmd npm install
   2. After node package install, after than run npm run dev or npm run start to start backend
 
 Most probably some enviroment variable also to be set...
