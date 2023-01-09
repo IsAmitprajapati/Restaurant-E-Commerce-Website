@@ -27,7 +27,7 @@ const Cart = () => {
 
 /********** */
 
-const stripeURL = "https://restaurant-e-commerce-website.vercel.app"
+const stripeURL = "/"
 const handlePayment = async(e)=>{
 
   e.preventDefault()
@@ -36,7 +36,6 @@ const handlePayment = async(e)=>{
       method : "POST",
       headers : {
         'content-type' : "application/json",
-        "Access-Control-Allow-Origin" : "https://restaurant-e-commerce-website.vercel.app"
       },
       body : JSON.stringify(cartProduct.cartProductItem)
   })
