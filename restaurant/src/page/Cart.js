@@ -34,9 +34,9 @@ const handlePayment = async(e)=>{
   const stripePromise = await loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
   const res = await fetch(stripeURL,{
       method : "POST",
-      headers : {
-        'content-type' : "application/json",
-      },
+//       headers : {
+//         'content-type' : "application/json",
+//       },
       body : JSON.stringify(cartProduct.cartProductItem)
   })
 
