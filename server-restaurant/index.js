@@ -31,7 +31,7 @@ app.post("/create-checkout-session", async (req, res) => {
                     name: item.title,
                     images: [item.imgURL],
                   },
-                  unit_amount: item.price ,
+                  unit_amount: item.price * 100,
                 },
                 adjustable_quantity: {
                   enabled: true,
