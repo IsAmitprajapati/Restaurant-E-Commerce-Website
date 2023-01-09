@@ -2,7 +2,7 @@
   "name": "restaurant",
   "version": "0.1.0",
   "private": true,
-  "proxy" : "https://restaurant-e-commerce-website.vercel.app"
+  "proxy" : "https://restaurant-e-commerce-website.vercel.app/"
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@stripe/react-stripe-js": "^1.16.2",
