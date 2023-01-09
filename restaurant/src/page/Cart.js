@@ -27,16 +27,17 @@ const Cart = () => {
 
 /********** */
 
-const stripeURL = "https://restaurant-e-commerce-website.vercel.app/"
+const stripeURL = "https://restaurant-e-commerce-website.vercel.app"
 const handlePayment = async(e)=>{
 
   e.preventDefault()
   const stripePromise = await loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
   const res = await fetch(stripeURL,{
       method : "POST",
-//       headers : {
-//         'content-type' : "application/json",
-//       },
+      headers : {
+        'content-type' : "application/json",
+        "Access-Control-Allow-Origin" : "https://restaurant-e-commerce-website.vercel.app"
+      },
       body : JSON.stringify(cartProduct.cartProductItem)
   })
 
