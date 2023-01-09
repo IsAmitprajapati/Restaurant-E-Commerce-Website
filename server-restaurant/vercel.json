@@ -3,7 +3,6 @@
   "name" : "restaurant-server",
   "builds" : [
     {
-      //specify file to convert to a serverless function
       "src" : "./index.js",
       "use" : "@vercel/node"
     }
