@@ -34,7 +34,7 @@ const FeatureCard = ({ id, img, title, price }) => {
             {title}
           </h3>
           <p className="text-base font-semibold text-headingColor">
-            <span className="text-base text-red-600">$</span>
+            <span className="text-base text-red-600">₹</span>
             {price}
           </p>
           <FaCartPlus className="text-xl text-slate-600 hover:text-red-600 cursor-pointer self-end" onClick={handleCartProduct}/>

@@ -31,6 +31,7 @@ const stripeURL = "https://restaurant-e-commerce-server.vercel.app/create-checko
 const handlePayment = async(e)=>{
 
   e.preventDefault()
+  console.log("fetc")
   const stripePromise = await loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
   const res = await fetch(stripeURL,{
       method : "POST",
@@ -43,7 +44,7 @@ const handlePayment = async(e)=>{
   if(res.statusCode === 500) return ;
 
   const data = await res.json()
-  // console.log(data)
+  console.log(data)
   toast("Redirect to payment gateway")
   stripePromise.redirectToCheckout({sessionId : data})
 

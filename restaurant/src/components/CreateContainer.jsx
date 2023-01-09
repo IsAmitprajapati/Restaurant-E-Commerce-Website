@@ -6,6 +6,8 @@ import {
   MdAccountBalanceWallet,
   MdSource,
 } from "react-icons/md";
+import {FaRupeeSign} from "react-icons/fa"
+
 import { BiDollar } from "react-icons/bi";
 import Loading from "../utils/Loading";
 import toast, { Toaster } from "react-hot-toast";
@@ -273,7 +275,7 @@ const CreateContainer = () => {
             />
           </div>
           <div className="border-black border-b-2 border-solid flex items-center my-3 flex-1">
-            <BiDollar className="text-2xl" />
+            <FaRupeeSign className="text-2xl" />
             <input
               type="text"
               placeholder="Enter the Prices"

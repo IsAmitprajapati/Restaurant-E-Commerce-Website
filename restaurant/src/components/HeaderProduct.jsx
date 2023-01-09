@@ -16,7 +16,7 @@ const HeaderProduct = ({id,img,decs,price,name}) => {
         {decs}
       </p>
       <p className="text-base font-semibold text-headingColor">
-        <span className="text-base text-red-600">$</span>
+        <span className="text-base text-red-600">₹</span>
         {price}
       </p>
     </div>

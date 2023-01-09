@@ -9,15 +9,15 @@ const PaymentSummary = ({cartTotal,deliveryCharge,Total,handlePayment}) => {
         </h3>
         <div className="py-2 px-3 text-base flex justify-between">
           <p>Cart Total</p>
-          <p>${cartTotal}</p>
+          <p>₹{cartTotal}</p>
         </div>
         <div className="py-2 px-3 text-base flex justify-between">
           <p>Delivery Charge</p>
-          <p>${deliveryCharge}</p>
+          <p>₹{deliveryCharge}</p>
         </div>
         <div className="py-2 px-3 text-base flex justify-between font-bold">
           <p>Total</p>
-          <p>${Total}</p>
+          <p>₹{Total}</p>
         </div>
       </div>
 

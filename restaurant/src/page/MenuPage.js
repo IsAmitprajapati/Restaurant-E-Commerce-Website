@@ -54,7 +54,7 @@ const MenuPage = () => {
           </div>
 
           <p className="text-xl font-semibold text-headingColor">
-            <span className=" text-red-600">$</span>
+            <span className=" text-red-600">₹</span>
             {data.price}
           </p>
 

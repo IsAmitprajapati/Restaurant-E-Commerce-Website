@@ -22,7 +22,7 @@ const CartAddedItem = ({ id, img, title, price, qty, total }) => {
           </div>
         </div>
         <p className="text-base font-semibold text-headingColor">
-          <span className="text-base text-red-600">$</span>
+          <span className="text-base text-red-600">₹</span>
           {price}
         </p>
         <div className="flex my-3 md:items-center flex-col md:flex-row jus">
@@ -44,7 +44,7 @@ const CartAddedItem = ({ id, img, title, price, qty, total }) => {
           <div className=" flex ml-0 md:ml-auto md:px-3 items-center">
             <p>Total : </p>
             <span className=" font-semibold px-2 py-1 text-slate-600">
-              <span>$</span>
+              <span>₹</span>
               {total}
             </span>
           </div>
