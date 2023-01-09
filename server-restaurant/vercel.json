@@ -1,5 +1,6 @@
 {
 "version" : 2,
+  "name" : "restaurant-server",
   "builds" : [
     {
       //specify file to convert to a serverless function
