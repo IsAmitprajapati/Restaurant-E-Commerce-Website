@@ -7,14 +7,14 @@ see output
 
 #### Link : https://restaurant-e-commerce-website-m2yp.vercel.app/
 
-###Start
+### Start
 
-##Frontend
+## Frontend
  1. Download the zip file or use the git clone .....( url of respo)
  2. Go on the folder restaurant and run cmd npm install 
  3. After node package install, After that run the cmd npm start
 
-##Backend
+## Backend
   1.Go on the folder server-restaurant and run again cmd npm install
   2. After node package install, after than run npm run dev or npm run start to start backend
 
