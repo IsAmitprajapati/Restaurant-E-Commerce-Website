@@ -21,12 +21,12 @@ app.post("/create-checkout-session", async (req, res) => {
             mode: "payment",
             payment_method_types: ["card"],
             billing_address_collection: "auto",
-            shipping_options: [{ shipping_rate: "shr_1MOGYhSHnOGYGLnPCmLrsqKh" }],
+            shipping_options: [{ shipping_rate: "shr_1MJTX8SHnOGYGLnPO1haAXqp" }],
         
             line_items: req.body.map((item) => {
               return {
                 price_data: {
-                  currency: "usd",
+                  currency: "inr",
                   product_data: {
                     name: item.title,
                     images: [item.imgURL],
