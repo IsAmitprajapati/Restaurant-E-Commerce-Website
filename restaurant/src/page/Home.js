@@ -50,8 +50,8 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="pt-10  flex-1 designHomeRight h-full px-2 ">
-        <div className="flex flex-wrap justify-center items-center gap-3 md:gap-6">
+      <div className="p-10 md:pt-10  flex-1 designHomeRight h-full px-2 ">
+        <div className="flex flex-wrap justify-center items-center gap-1 md:gap-6">
           {headerData &&
             headerData.map((el) => {
               return (

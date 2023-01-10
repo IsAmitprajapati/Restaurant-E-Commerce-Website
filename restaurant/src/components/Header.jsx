@@ -89,7 +89,7 @@ const Header = () => {
     <header className="fixed z-50 w-screen bg-white text-black   px-1 md:px-7 shadow-md select-none">
       {/**desktop & tablet */}
       <div className="hidden md:flex w-full justify-between">
-        <Link to={"/"} className="py-2">
+        <Link to={"/"} className="py-2" onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}>
           <div className="flex items-center gap-2 ">
             <Logo />
           </div>
@@ -115,16 +115,16 @@ const Header = () => {
             exit={{ opacity: 0, x: 200 }}
             className="flex items-center gap-8 h-full p-0"
           >
-            <NavLink  to="/" className={({isActive}) => `text-base  text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer box-border h-full flex items-center hover:border-b-4 hover:border-red-600 hover:font-semibold p-1  ${isActive ? "border-b-4 border-red-600 font-semibold" : ""} `} end>
+            <NavLink  to="/"  onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}  className={({isActive}) => `text-base  text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer box-border h-full flex items-center hover:border-b-4 hover:border-red-600 hover:font-semibold p-1  ${isActive ? "border-b-4 border-red-600 font-semibold" : ""} `} end>
               Home
             </NavLink>
-            <NavLink to={"/menu"} className={({isActive}) => `text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer  box-border h-full flex items-center hover:border-b-4 hover:border-red-600 hover:font-semibold p-1 ${isActive ? "border-b-4 border-red-600 font-semibold" : ""} `}>
+            <NavLink to={"/menu"}  onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})} className={({isActive}) => `text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer  box-border h-full flex items-center hover:border-b-4 hover:border-red-600 hover:font-semibold p-1 ${isActive ? "border-b-4 border-red-600 font-semibold" : ""} `}>
               Menu
             </NavLink>
-            <NavLink to={"/about"} className={({isActive}) =>`text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer  box-border h-full flex items-center hover:border-b-4 hover:border-red-600 hover:font-semibold p-1 ${isActive ? "border-b-4 border-red-600 font-semibold" : ""} `}>
+            <NavLink to={"/about"} onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}  className={({isActive}) =>`text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer  box-border h-full flex items-center hover:border-b-4 hover:border-red-600 hover:font-semibold p-1 ${isActive ? "border-b-4 border-red-600 font-semibold" : ""} `}>
               About Us
             </NavLink>
-            <NavLink to={"service"} className={({isActive}) =>`text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer  box-border h-full flex items-center hover:border-b-4 hover:border-red-600 hover:font-semibold p-1 ${isActive ? "border-b-4 border-red-600 font-semibold" : ""} `}>
+            <NavLink to={"service"} onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}  className={({isActive}) =>`text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer  box-border h-full flex items-center hover:border-b-4 hover:border-red-600 hover:font-semibold p-1 ${isActive ? "border-b-4 border-red-600 font-semibold" : ""} `}>
               Service
             </NavLink>
           </motion.ul>
@@ -132,7 +132,7 @@ const Header = () => {
             whileTap={{ scale: 0.8 }}
             className="relative flex items-center justify-center"
           >
-          <Link to={"/cart"}>
+          <Link to={"/cart"} onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}>
             <MdShoppingCart className="text-textColor text-2xl cursor-pointer" />
             <div className="absolute top-0 -right-2 w-4 h-4  rounded-full bg-red-600 -translate-y-1/3 text-center">
               <p className="text-sm text-white font-semibold text-center p-0 m-0 ">
@@ -169,6 +169,7 @@ const Header = () => {
                     <Link
                     to={"./createitem"}
                     onClick={()=>setIsLogin(false)}
+
                     className="whitespace-nowrap flex hover:bg-red-50 hover:text-slate-600 py-1 px-2 items-center w-full gap-3"
                   >
                     New Item
@@ -221,7 +222,7 @@ const Header = () => {
             whileTap={{ scale: 0.8 }}
             className="relative flex items-center justify-center"
           >
-          <Link to={"/cart"}>
+          <Link to={"/cart"} onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}>
             <MdShoppingCart className="text-textColor text-2xl cursor-pointer" />
             <div className="absolute top-0 -right-2 w-4 h-4  rounded-full bg-red-600 -translate-y-1/3 text-center">
               <p className="text-sm text-white font-semibold text-center p-0 m-0 ">

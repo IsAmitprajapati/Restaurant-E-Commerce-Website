@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const HeaderProduct = ({id,img,decs,price,name}) => {
   return (
-    <Link to={"/menu/"+id}>
+    <Link to={"/menu/"+id} onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}>
     <div
       key={id}
       className="w-150 md:w-190 mt-6 p-3 md:p-4 md:mt-4 bg-slate-100 hover:bg-slate-50 cursor-pointer backdrop-blur-md rounded-3xl flex flex-col items-center justify-center hover:scale-105 transition-all "

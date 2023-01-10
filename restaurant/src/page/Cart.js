@@ -15,6 +15,9 @@ import toast from 'react-hot-toast';
 
 
 const Cart = () => {
+  const user = useSelector((state) => state.user);
+  console.log(user.email)
+
   const cartProduct = useSelector((state) => state.cartProduct);
   // console.log(cartProduct);
 
@@ -29,8 +32,8 @@ const Cart = () => {
 
 const stripeURL = "https://restaurant-e-commerce-server.vercel.app/create-checkout-session"
 const handlePayment = async(e)=>{
-
   e.preventDefault()
+  if(user.email){
   console.log("fetc")
   const stripePromise = await loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
   const res = await fetch(stripeURL,{
@@ -47,6 +50,11 @@ const handlePayment = async(e)=>{
   console.log(data)
   toast("Redirect to payment gateway")
   stripePromise.redirectToCheckout({sessionId : data})
+  }
+  else{
+    toast("your are not login!!")
+  }
+
 
 }
 /***** */

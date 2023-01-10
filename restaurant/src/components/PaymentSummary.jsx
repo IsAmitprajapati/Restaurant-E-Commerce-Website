@@ -1,6 +1,8 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 const PaymentSummary = ({cartTotal,deliveryCharge,Total,handlePayment}) => {
+  
   return (
     <>
       <div className="max-w-sm ml-auto drop-shadow rounded shadow-md overflow-hidden">
