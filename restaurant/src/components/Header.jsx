@@ -268,6 +268,7 @@ const Header = () => {
                 </ul>
               </div>
               <div className="rounded overflow-hidden">
+                { process.env.REACT_APP_ADMIN_ID === user.email &&
                 <Link
                   to={"./createitem"}
                   onClick={()=>setIsLogin(false)}
@@ -276,6 +277,7 @@ const Header = () => {
                   New Item
                   <MdAddCircleOutline className="ml-auto " />
                 </Link>
+              }
               </div>
               <div className="rounded overflow-hidden">
                 <div
