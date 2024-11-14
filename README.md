@@ -5,7 +5,7 @@ A modern UI conforms to your audience's existing perspective of what they think 
 
 see output 
 
-#### Link : https://restaurant-e-commerce-website-m2yp.vercel.app/
+#### Link : https://restaurant-e-commerce-website-omega.vercel.app/
 
 #### Demo Video : https://youtu.be/t3QWD2UdGJo
 
