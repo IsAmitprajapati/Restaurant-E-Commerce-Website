@@ -30,7 +30,7 @@ const Cart = () => {
 
 /********** */
 
-const stripeURL = "https://restaurant-e-commerce-server.vercel.app/create-checkout-session"
+const stripeURL = "https://restaurant-e-commerce-website-u1ew.vercel.app/create-checkout-session"
 const handlePayment = async(e)=>{
   e.preventDefault()
   if(user.email){
