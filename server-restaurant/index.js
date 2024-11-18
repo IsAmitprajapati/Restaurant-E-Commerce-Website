@@ -22,7 +22,7 @@ app.post("/create-checkout-session", async (req, res) => {
             payment_method_types: ["card"],
             billing_address_collection: "auto",
             shipping_options: [{ shipping_rate: "shr_1MJTX8SHnOGYGLnPO1haAXqp" }],
-            customer_email : user.email,
+            customer_email : req?.body?.email,
             line_items: req.body.map((item) => {
               return {
                 price_data: {
